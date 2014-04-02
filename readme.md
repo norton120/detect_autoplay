@@ -1,4 +1,4 @@
-Detect_autoplayjs
+Detect_autoplay.js
 =========
 
 detect_autoplay.js does exactly what it sounds like it would - it detects autoplay support for HTML5 video elements. Hopefully we will someday live in a world where this is is not needed... but alas, as of now there is no cross-browser 
