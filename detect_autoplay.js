@@ -40,4 +40,16 @@
 
     }
 
-    detect_autoplay(100);
+    //if included before the body you get a race condition. This solves that issue.     
+    function wait_for_body(){
+        if(document.body){
+            detect_autoplay(100);
+        }
+        else{
+            setTimeout(wait_for_body, 100);
+        };
+
+    }
+ 
+    wait_for_body();
+

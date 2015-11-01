@@ -26,6 +26,7 @@ If you go into the plugin you will see there is a timer variable **"acceptable_d
     
     detect_autoplay(800);           //in this case we made the delay 800ms
 
+To prevent a race condition where the test video is appended to the body before the body exists, the wait_for_body function does exactly that; waiting for the body element before running detect_autoplay. 
 
 That's it. Hope this helps a few of you create great new things on the web!
 
